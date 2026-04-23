@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portofolio | Beranda Shinchan 🖍️</title>
+    <style>
+        @import url('https://googleapis.com');
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            background-image: linear-gradient(rgba(255, 249, 219, 0.5), rgba(255, 249, 219, 0.5)), 
+                              url(https://i.pinimg.com/736x/24/c9/96/24c9964154b882ca81a8d40738efaf79.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #ff4d4d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 6px solid #ffde59;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        header h1 { margin: 0; font-size: 2.2em; letter-spacing: 2px; }
+
+        nav {
+            background-color: #3a86ff;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: #ffde59; }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            border-radius: 20px;
+            border: 4px solid #333;
+            box-shadow: 10px 10px 0px #ffde59;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .content-text h2 {
+            color: #ff4d4d;
+            font-family: 'Fredoka', sans-serif;
+            border-left: 6px solid #3a86ff;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        .content-text p {
+            text-align: justify;
+            line-height: 1.7;
+            background: rgba(255, 253, 240, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .content-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .photo-box {
+            width: 100%;
+            border: 3px solid #333;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 6px 6px 0px #3a86ff;
+            transition: 0.3s;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .photo-box:hover {
+            transform: scale(1.03);
+            box-shadow: 8px 8px 0px #ff4d4d;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 850px) {
+            .content-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PORTOFOLIO CHERISH ILEESYA 🖍️</h1>
+        <p>Kerja Nyata dari Proses Belajar</p>
+    </header>
+
+    <nav>
+        <a href="index.html">🏠 Beranda</a>
+        <a href="profil.html">🎒 Profil</a>
+        <a href="video.html">🎬 Video</a>
+        <a href="project.html">✨ My Project</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-grid">
+            <div class="content-text">
+                <h2>🌟 Selamat Datang di Website Portofolio</h2>
+                <p>Website ini merupakan media pendukung untuk menampilkan hasil Ujian Praktik Terintegrasi. Konten utama pada website ini adalah video broadcasting pembelajaran yang berisi penyampaian teks argumentasi secara lisan.</p>
+                
+                <h2>🎨 Tentang Website Ini</h2>
+                <p>Website ini merupakan website portofolio digital yang berisi hasil karya dan pembelajaran saya selama mengikuti Ujian Praktik Terintegrasi.</p>
+                
+                <h2>🚀 Tujuan Pembuatan</h2>
+                <p>Tujuan pembuatan website ini adalah untuk menampilkan karya yang telah saya buat serta melatih kemampuan saya dalam membuat website sederhana menggunakan HTML.</p>
+
+                <h2>📌 Topik Argumentasi dan Alasan</h2>
+                <p><i>Topik argumentasi yang saya angkat adalah pentingnya kegiatan Internship Curriculum (IC), khususnya pengalaman di Nisvara Bakery, sebagai bekal nyata dalam mempersiapkan siswa menghadapi dunia kerja. Saya memilih topik ini karena IC memberikan pengalaman langsung yang tidak didapat di kelas, sekaligus membantu mengembangkan keterampilan, tanggung jawab, dan kesiapan siswa untuk masa depan.</i></p>
+
+                <h2>🙏 Harapan dari Video</h2>
+                <p><i>Harapan saya, setelah menonton video ini, penonton dapat memahami bahwa pengalaman belajar di luar kelas seperti Internship Curriculum (IC) sangat penting untuk mempersiapkan diri menghadapi dunia kerja. Saya juga berharap penonton dapat lebih menghargai setiap kesempatan belajar praktik serta berani mengembangkan keterampilan sejak dini.</i></p>
+
+                <h2>💭 Refleksi, Kesan, dan Pesan</h2>
+                <p><i>Selama ujian praktik dan belajar di kelas 9, saya belajar menjadi lebih disiplin, bertanggung jawab, serta mampu mengatur waktu dengan baik. Melalui kegiatan seperti IC, saya juga mendapatkan pengalaman langsung yang membantu saya memahami dunia kerja dan melatih keterampilan seperti kerja sama dan komunikasi. Kesan saya selama belajar di SMPIT Al Haraki sangat baik karena pembelajarannya tidak hanya teori, tetapi juga praktik. Pesan saya, semoga sekolah terus mengembangkan program yang bermanfaat bagi siswa di masa depan.</i></p>
+            </div>
+
+            <div class="content-gallery">
+                <div class="photo-box">
+                    <img src="https://i.pinimg.com/1200x/a1/b7/84/a1b784e217fdd53aa0e30e5f9e2dae1d.jpg" alt="Germany">
+                </div>
+                <div class="photo-box">
+                    <img src="https://i.pinimg.com/736x/3d/de/c9/3ddec981e39f536e3284dddebc101ed7.jpg" alt="Snoopy">
+                </div>
+                <div class="photo-box">
+                    <img src="https://i.pinimg.com/736x/62/55/27/625527d80a64c67628dce8af11a17c91.jpg" alt="Shinchan">
+                </div>
+                <div class="photo-box">
+                    <img src="https://i.pinimg.com/736x/19/b6/4e/19b64e232d0b2099e800738885897a3a.jpg" alt="Tuscany">
+                </div>
+                <!-- FRAME TAMBAHAN BARU -->
+                <div class="photo-box">
+                    <img src="https://i.pinimg.com/1200x/a3/ed/ab/a3edabb2017849bf9bf5cf072ea246cd.jpg" alt="Additional Photo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ujian Praktik Terintegrasi | SMPIT Al Haraki | Cherish Ileesya@2026</p>
+    </footer>
+</body>
+</html>
